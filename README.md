@@ -5,11 +5,20 @@ PHG(http://lsec.cc.ac.cn/phg/) 是张林波研究员设计的并行自适应有�
 
 用户可以将这个库集成到自己的Visual Studio开发环境。可以使用MSVC自带编译器cl或者Clang的编译器clang-cl。
 
-examples下的应用程序编译方式如下：
+examples下的应用程序使用方法（以poisson.c为例）：
+
+Clang或者MSVC编译器编译方式如下：
 ```bash
 cd examples
 clang-cl poisson.c -I ..\include ..\lib\phg.lib
+#cl poisson.c -I ..\include ..\lib\phg.lib
 ```
+GCC编译（MinGW）方式如下：
+```bash
+cd examples
+gcc poisson.c -I ..\include ..\bin\phg.dll -DMSMPI_NO_SAL
+```
+
 运行方式如下：
 ```bash
 cd bin
