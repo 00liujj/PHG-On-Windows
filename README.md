@@ -1,4 +1,4 @@
-# PHG跨平台：Linux/Windows
+# Windows版本的PHG
 
 PHG(http://lsec.cc.ac.cn/phg/) 是张林波研究员设计的并行自适应有限元平台。
 这里是phg-0.9.2的一个windows二进制版本，希望能给在windows下编写PHG应用程序的人提供方便。
