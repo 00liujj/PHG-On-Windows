@@ -1,4 +1,4 @@
-# PHG-On-Windows
+# PHG跨平台：Linux/Windows
 
 PHG(http://lsec.cc.ac.cn/phg/) 是张林波研究员设计的并行自适应有限元平台。
 这里是phg-0.9.2的一个windows二进制版本，希望能给在windows下编写PHG应用程序的人提供方便。
@@ -13,7 +13,7 @@ cd examples
 clang-cl poisson.c -I ..\include ..\lib\phg.lib
 #cl poisson.c -I ..\include ..\lib\phg.lib
 ```
-GCC编译（MinGW）方式如下：
+MinGW GCC编译器编译方式如下：
 ```bash
 cd examples
 gcc poisson.c -I ..\include ..\bin\phg.dll -DMSMPI_NO_SAL
